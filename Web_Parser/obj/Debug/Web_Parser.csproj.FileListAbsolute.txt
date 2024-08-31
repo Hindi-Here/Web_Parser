@@ -60,3 +60,38 @@ C:\MyFiles&&\Ученье свет\Visual\Web_Parser\Web_Parser\bin\Debug\AngleS
 C:\MyFiles&&\Ученье свет\Visual\Web_Parser\Web_Parser\bin\Debug\Microsoft.Win32.Registry.dll
 C:\MyFiles&&\Ученье свет\Visual\Web_Parser\Web_Parser\bin\Debug\System.Memory.dll
 C:\MyFiles&&\Ученье свет\Visual\Web_Parser\Web_Parser\bin\Debug\System.Buffers.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\Web_Parser.exe.config
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\Web_Parser.exe
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\Web_Parser.pdb
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\AngleSharp.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\Microsoft.Win32.Registry.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Buffers.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Memory.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Numerics.Vectors.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Security.AccessControl.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Security.Principal.Windows.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\AngleSharp.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\Microsoft.Win32.Registry.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Buffers.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Memory.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Numerics.Vectors.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Security.AccessControl.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Security.Principal.Windows.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.csproj.AssemblyReference.cache
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\MainWindow.g.cs
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\App.g.cs
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser_MarkupCompile.cache
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser_MarkupCompile.lref
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\App.baml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\MainWindow.baml
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.g.resources
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.Properties.Resources.resources
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.csproj.GenerateResource.cache
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.csproj.CoreCompileInputs.cache
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.csproj.Up2Date
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.exe
+C:\MyPath\Coding\C#\Web_Parser\Web_Parser\obj\Debug\Web_Parser.pdb

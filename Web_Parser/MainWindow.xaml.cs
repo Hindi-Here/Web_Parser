@@ -42,10 +42,10 @@ namespace Web_Parser
 
         private void Info_Click(object sender, RoutedEventArgs e) //open / close InfoTab & create yourself pars
         {        
-            var style = (Style)Resources["ButtonStyle_InfoPage"];
+            var style = (Style)Application.Current.Resources["ButtonStyle_InfoPage"];
             if (Info.Style == style)
             {
-                Info.Style = (Style)Resources["ButtonStyle_InfoBackPage"];
+                Info.Style = (Style)Application.Current.Resources["ButtonStyle_InfoBackPage"];
                 Width = 1540;
             }
             else
@@ -125,8 +125,8 @@ namespace Web_Parser
             //Сам не понял если честно
         }
 
-        void InfoTable_Method()
-        { // method output in InfoTab
+        void InfoTable_Method() // method output in InfoTab
+        { 
             int probels = 0, number = 0;
             char[] ParsArr = ParsText_Box.Text.ToCharArray();
             for (int i = 0; i < ParsArr.Length; i++)

@@ -4,6 +4,330 @@
              xmlns:local="clr-namespace:Web_Parser"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Style x:Key="StandartButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFEDEDED"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="3,3,3,3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Парсить"></ContentPresenter>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Background" Value="#CCEDEDED"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <BlurEffect Radius="2.7"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="StandartButtonStyle_Back" TargetType="Button" BasedOn="{StaticResource StandartButtonStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+      Background="{TemplateBinding Background}"
+      BorderBrush="{TemplateBinding BorderBrush}" 
+      BorderThickness="3,3,3,3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Вернуться"></ContentPresenter>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Background" Value="#CCEDEDED"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <BlurEffect Radius="2.7"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="StandartButtonStyle_Selector" TargetType="Button" BasedOn="{StaticResource StandartButtonStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+             Background="{TemplateBinding Background}"
+             BorderBrush="{TemplateBinding BorderBrush}" 
+             BorderThickness="3,3,3,3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Применить"></ContentPresenter>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Background" Value="#CCEDEDED"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <BlurEffect Radius="2.7"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonStyle_InfoPage" TargetType="Button" BasedOn="{StaticResource StandartButtonStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                     CornerRadius="0 20 0 0"
+                     Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}" 
+                     BorderThickness="3,3,3,3">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                            <ContentPresenter x:Name="ContentPresenter"
+                         Content="↪" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Background" Value="#CCEDEDED"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <BlurEffect Radius="2.7"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonStyle_InfoBackPage" TargetType="Button" 
+        BasedOn="{StaticResource StandartButtonStyle}">
+            <Setter Property="Template">
+                <!-- Setter устанавливает свойства -->
+                <Setter.Value>
+                    <ControlTemplate>
+                        <!-- В Control Template описываются события и эффекты -->
+                        <Border 
+                     CornerRadius="0 20 0 0"
+                     Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}" 
+                     BorderThickness="3,3,3,3">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" 
+                                           BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                            <ContentPresenter x:Name="ContentPresenter"
+                  Content="↩" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Trigger создает событие (в данном случае наведения мышки) -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Background" Value="#CCEDEDED"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <BlurEffect Radius="2.7"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="Standart_Box" TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Foreground" Value="#FF939393"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                    Background="#FFDAD7D8"
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="3,3,3,3">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                                <Setter Property="Foreground" Value="Black"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TextLink_Box" TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                    CornerRadius="20 0 0 0"
+                    Background="#FFDAD7D8"
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="3,3,3,3">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="30" Opacity="0.6"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TextPars_Box" TargetType="TextBox" BasedOn="{StaticResource TextLink_Box}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                    CornerRadius="0 0 20 20"
+                    Background="#FFDAD7D8"
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="3,3,3,3">
+
+                            <ScrollViewer x:Name="PART_ContentHost" VerticalScrollBarVisibility="Hidden"/>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="15" Direction="300" BlurRadius="20" Opacity="0.6"/>
+                            </Border.Effect>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF535050"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ScrollBarPageButtonStyle" TargetType="{x:Type RepeatButton}">
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Border Background="Transparent" Width="10" BorderBrush="Transparent"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Дизайн ползунка -->
+        <Style x:Key="ScrollBarThumbStyle" TargetType="{x:Type Thumb}">
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Border  CornerRadius="5" Width="20" Height="7" Margin="0,0,0,248">
+                            <Border.Background>
+                                <SolidColorBrush Color="#FF3D3D3C"></SolidColorBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Дизайн трека скроллбара -->
+        <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}">
+            <Border CornerRadius="0 0 10 10" Width="20">
+                <Border.Background>
+                    <SolidColorBrush Color="#FFABABAB"></SolidColorBrush>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Track Name="PART_Track" Grid.Row="1" 
+                    IsDirectionReversed="True" ViewportSize="0.9" IsManipulationEnabled="True" >
+                        <Track.DecreaseRepeatButton>
+                            <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButtonStyle}">
+                            </RepeatButton>
+                        </Track.DecreaseRepeatButton>
+                        <Track.Thumb>
+                            <Thumb    Style="{StaticResource ScrollBarThumbStyle}">
+                            </Thumb>
+                        </Track.Thumb>
+                        <Track.IncreaseRepeatButton>
+                            <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButtonStyle}">
+                            </RepeatButton>
+                        </Track.IncreaseRepeatButton>
+                    </Track>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+
+        <!-- Финальный вывод стиля скролла -->
+        <Style TargetType="{x:Type ScrollBar}">
+            <Setter Property="Template" Value="{StaticResource VerticalScrollBar}"/>
+        </Style>
+
+        <Style x:Key="CheckButtonStyle" TargetType="CheckBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <BulletDecorator Background="Transparent" Cursor="Hand">
+                            <BulletDecorator.Bullet>
+                                <Grid Height="25" Width="25">
+                                    <Border Name="CheckButton" Background="Transparent" BorderBrush="Black" BorderThickness="2" CornerRadius="15" />
+                                </Grid>
+                            </BulletDecorator.Bullet>
+                            <TextBlock Margin="3,1,0,0" Foreground="Black" FontFamily="Impact" FontSize="24">
+          <ContentPresenter/>
+                            </TextBlock>
+                        </BulletDecorator>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter TargetName="CheckButton" Property="Background" Value="#FFCCCBCB"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Application.Resources>
 </Application>
